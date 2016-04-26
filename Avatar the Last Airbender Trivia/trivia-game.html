@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avatar: The Last Airbender Trivia</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+<!--Welcome Screen-->
+<div id="welcome-screen" class="text-center">
+	<div class="jumbotron">
+		<h1>Avatar: The Last Airbender Trivia</h1>
+		<p>See how many questions you can get right!</p>
+	</div>
+</div>
+
+
+<!--Dashboard-->
+<div id="dashboard" class="text-center">
+	<h2 id="show-player-name"></h2>
+	<h2>Correct: <span>0</span></h2>
+	<h2>Incorrect: <span>0</span></h2>
+</div>
+
+
+<!--Name Screen-->
+<div id="name-screen" class="text-center">
+	<h2>Please enter your name here:</h2>
+	<form class="form-inline">
+  		<div class="form-group">
+    		<label for="exampleInputName2">Name</label>
+   			 <input type="text" class="form-control" id="player-name" placeholder="Jane Doe">
+  		</div>
+	</form>
+</div>
+
+<!--Level Screen-->
+<div id="level-screen" class="text-center">
+	<h2>Please choose a level:</h2>
+	<button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  Easy
+	</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	<button type="button" class="btn btn-warning" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  Middle
+	</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	<button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  Hard
+	</button>
+</div>
+
+<br />
+<br />
+
+<!--Begin button-->
+<div id="begin-button" class="text-center">
+	<button id="player-name-btn" type="submit" class="btn btn-primary">Begin</button>
+</div>
+
+<!--Question 1-->
+<div id="question1" class="text-center">
+	<h1 class="question"> 1. How old is Aang in the show?</h1>
+		<ul id="answer1">
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">11</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">12</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">111</label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">112</label><br/>
+		</ul>
+	 <button id="player-answer-1" type="submit" class="btn btn-primary">See Answer</button>
+</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
