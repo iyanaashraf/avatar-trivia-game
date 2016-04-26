@@ -1,5 +1,8 @@
 $(document).ready(function() {
-	var playerName='';
+	var playerName ='';
+	var easy = false
+	var medium = false
+	var hard = false
 	
 
 	
@@ -16,16 +19,27 @@ $(document).ready(function() {
 		e.preventDefault();
 		playerName = $('#player-name').val();
 		console.log(playerName);
-	$('#show-player-name').text(playerName);
-	$('#dashboard').fadeIn(500);
-	$('#name-screen').fadeOut(500); 
-	$('#level-screen').fadeOut(500);
-	$('#begin-button').fadeOut(500);
+		$('#show-player-name').text(playerName);
+		$('#dashboard').fadeIn(500);
+		$('#name-screen').fadeOut(500); 
+		$('#level-screen').fadeOut(500);
+		$('#begin-button').fadeOut(500);
+		var attrEasy = $('#easy').attr('checked');
+		var attrMedium = $('#medium').attr('checked');
+		var attrHard= $('#hard').attr('checked');
+		if(attr) {
+			console.log("player-chose-easy");
+		}
+		else if(attrMedium) {
+			console.log("player-chose-medium");
+		}
+		else {
+			console.log("player-chose-hard");
+		}
+	});
 
-	
-	})
+	$()
 
-	// Question 1
 
 	
 	

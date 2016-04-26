@@ -37,16 +37,23 @@
 <!--Level Screen-->
 <div id="level-screen" class="text-center">
 	<h2>Please choose a level:</h2>
-	<button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off">
-	  Easy
-	</button>&nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="button" class="btn btn-warning" data-toggle="button" aria-pressed="false" autocomplete="off">
-	  Middle
-	</button>&nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off">
-	  Hard
-	</button>
+	<div class="radio">
+ 		<label>
+    		<input type="radio" name="optionsRadios" id="easy" value="false">Easy
+    	</label>
+	</div>
+	<div class="radio">
+  		<label>
+    		<input type="radio" name="optionsRadios" id="medium" value="false">Medium
+		</label>
+	</div>
+	<div class="radio">
+  		<label>
+    		<input type="radio" name="optionsRadios" id="hard" value="false">Hard
+ 		</label>
+	</div>
 </div>
+	
 
 <br />
 <br />
@@ -57,7 +64,7 @@
 </div>
 
 <!--Question 1-->
-<div id="question1" class="text-center">
+<div id="question1-easy" class="text-center">
 	<h1 class="question"> 1. How old is Aang in the show?</h1>
 		<ul id="answer1">
 			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">11</label><br/>
