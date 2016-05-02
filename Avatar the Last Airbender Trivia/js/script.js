@@ -8,38 +8,48 @@ $(document).ready(function() {
 	
 
 	// Hide on load
+	$('#level-screen').hide();
+	$('#begin-button').hide();
 	$('#dashboard').hide();
-	$('#question1').hide();
+	$('#question1-easy').hide();
 	
 
 	//user can start typing name immediently
-	$('#player-name-btn').focus();
+	$('#next-button').focus();
 	
-	$('#player-name-btn').on('click', function (e) {
+	$('#next-button').on('click', function (e) {
 		e.preventDefault();
 		playerName = $('#player-name').val();
 		console.log(playerName);
 		$('#show-player-name').text(playerName);
-		$('#dashboard').fadeIn(500);
 		$('#name-screen').fadeOut(500); 
-		$('#level-screen').fadeOut(500);
-		$('#begin-button').fadeOut(500);
+		$('#level-screen').fadeIn(500);
+		$('#begin-button').fadeIn(500);
+	});
+		
+$('#begin-button').on('click', function(e){
+	e.preventDefault();
 		var attrEasy = $('#easy').attr('checked');
 		var attrMedium = $('#medium').attr('checked');
 		var attrHard= $('#hard').attr('checked');
-		if(attr) {
-			console.log("player-chose-easy");
-		}
-		else if(attrMedium) {
-			console.log("player-chose-medium");
-		}
-		else {
-			console.log("player-chose-hard");
-		}
+			if(attr) {
+				console.log("player-chose-easy");
+				
+					
+					
+
+				
+			}
+			else if(attrMedium) {
+				console.log("player-chose-medium");
+			}
+			else {
+				console.log("player-chose-hard");
+			}
 	});
 
-	$()
-
+	
+	
 
 	
 	
